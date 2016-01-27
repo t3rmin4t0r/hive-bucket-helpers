@@ -6,7 +6,6 @@ import org.apache.hadoop.hive.ql.udf.UDFType;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 
-@UDFType(deterministic = false)
 public class BucketIdUDF extends UDF {
 	transient IntWritable result = new IntWritable();
 	public final IntWritable evaluate(Text a) {
